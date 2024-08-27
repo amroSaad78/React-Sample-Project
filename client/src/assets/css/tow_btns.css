@@ -1,0 +1,45 @@
+.tow_btns-container {
+  display: flex;
+  margin: 1.25em 5%;
+  max-width: 240px;
+  border-radius: 40px;
+  border: 2px solid var(--dark-blue);
+}
+
+.tow_btns-container input[type="submit"] {
+  width: 50%;
+  color: var(--white);
+  border-radius: 0 20px 20px 0;
+  background-color: var(--dark-blue);
+}
+
+.tow_btns-container input[type="button"] {
+  width: 50%;
+  color: var(--dark-blue);
+  border-radius: 20px 0 0 20px;
+  background-color: var(--white);
+}
+
+.form-btn {
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.form-btn.solid {
+  border: none;
+  margin: 0;
+  width: 150px;
+  height: 40px;
+}
+
+.form-btn.solid:hover {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 540px) {
+  .tow_btns-container {
+    margin: 1em auto;
+  }
+}

@@ -1,0 +1,22 @@
+.search-box label {
+  width: 0%;
+  display: flex;
+  direction: rtl;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: var(--dark-blue);
+}
+
+.search-box.active label {
+  width: calc(100% - 4em);
+}
+
+@media (max-width: 768px) {
+  .search-box label {
+    font-size: 1rem;
+  }
+  .search-box.active label {
+    width: calc(100% - 3.5em);
+  }
+}

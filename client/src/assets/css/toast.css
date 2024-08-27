@@ -1,0 +1,40 @@
+.toast-container {
+  position: fixed;
+  bottom: 10%;
+  padding: 1em;
+  border-radius: 0.5em;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.dash-container .toast-container {
+  left: calc(50% - 150px);
+}
+
+.dash-container.active .toast-container {
+  left: calc(50% - 40px);
+}
+
+.toast-container p {
+  margin: auto 0;
+  color: var(--white);
+  font-size: 1.1rem;
+}
+.toast-container p span {
+  vertical-align: middle;
+}
+
+.toast-container p span i {
+  margin: 0.25em;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .dash-container .toast-container,
+  .dash-container.active .toast-container {
+    left: 50%;
+    padding: 0.25em;
+  }
+}

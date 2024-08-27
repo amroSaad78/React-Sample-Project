@@ -1,0 +1,21 @@
+.progressbar {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  min-height: 1.5em;
+  text-align: center;
+  flex-direction: column;
+}
+
+.progressbar > div {
+  height: 0.5em;
+  border-radius: 0.25em;
+  background: linear-gradient(to right, var(--med-blue), var(--dark-blue));
+}
+
+.progressbar > p {
+  font-size: 1em;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--chocolate);
+}

@@ -1,0 +1,107 @@
+.sub-course-card {
+  position: relative;
+  width: 20em;
+  margin: 1em;
+  height: 16em;
+}
+
+.sub-course-toggle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--silver);
+  background: white;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.sub-course-toggle i {
+  font-size: 1.25rem;
+  transition: all 0.1s ease-in;
+}
+
+.sub-course-toggle:hover i {
+  font-size: 1.5rem;
+}
+
+.sub-course-body {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 14em;
+  width: 100%;
+  padding: 0 0.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sub-course-body span {
+  position: absolute;
+  left: 0;
+  top: 0em;
+  margin: 0.75em;
+}
+
+.sub-course-body span i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--silver);
+  transition: color 0.3s ease-in;
+}
+
+.sub-course-body span i:hover {
+  color: var(--chocolate);
+}
+
+.sub-course-body h2 {
+  direction: ltr;
+  margin-top: 2.5em;
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--chocolate);
+}
+
+.sub-course-body div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-course-body p {
+  direction: rtl;
+  margin: 0.5em 1em;
+  text-align: right;
+}
+
+.sub-course-buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-course-buttons span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 0.5em;
+  width: 6em;
+  height: 2em;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--silver);
+  border-radius: 0.5em;
+  background: var(--white);
+  transition: all 0.5s ease-in;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}

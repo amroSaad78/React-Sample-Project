@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "ElMessiri";
+  src: url("../fonts/El_Messiri/ElMessiri-Regular.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #74c2d5, transparent);
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ElMessiri", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root {
+  --white: #fff;
+  --success: rgb(0, 210, 0);
+  --light-red: rgb(210, 0, 0);
+  --silver: silver;
+  --dark-black: #222;
+  --med-blue: #008cce;
+  --light-black: #999;
+  --dark-blue: #016fa2;
+  --chocolate: chocolate;
+}
+
+.danger {
+  color: var(--light-red) !important;
+}
+
+.success {
+  color: var(--success) !important;
+}
+
+.checked {
+  color: rgb(0, 255, 0) !important;
+}
+
+.checked:hover {
+  color: rgba(0, 255, 0, 0.5) !important;
+}
+
+.trim {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,118 @@
+.course-card {
+  position: relative;
+  width: 24em;
+  margin: 1em;
+  height: 18em;
+}
+
+.course-list {
+  position: absolute;
+  top: 4em;
+  left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  color: var(--silver);
+  transition: all 0.3s ease-in;
+  z-index: 1;
+}
+
+.course-list:hover {
+  color: var(--chocolate);
+}
+
+.course-list i {
+  font-size: 1.5rem;
+}
+
+.course-body {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 15em;
+  width: 100%;
+  padding: 0 0.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-body h2 {
+  margin-top: 2.5em;
+  font-size: 1.4rem;
+
+  text-align: center;
+  color: var(--chocolate);
+}
+
+.course-body div {
+  height: 5em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.course-body div p {
+  direction: rtl;
+  margin: 0.5em 1em;
+  text-align: center;
+}
+
+.course-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  background: var(--white);
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.course-buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.course-buttons span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 0.5em;
+  width: 6em;
+  height: 2em;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--silver);
+  border-radius: 0.5em;
+  background: var(--white);
+  transition: all 0.5s ease-in;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.delBtn:hover {
+  color: red;
+  box-shadow: 0 0 5px red;
+}
+
+.editBtn:hover {
+  color: green;
+  box-shadow: 0 0 5px green;
+}
+
+.addBtn:hover {
+  color: blue;
+  box-shadow: 0 0 5px blue;
+}
